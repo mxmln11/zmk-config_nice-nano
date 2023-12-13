@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {     ed_strip {
-        chain-length = <21>;
+        chain-length = <42>;
         };
 
         keymap {
