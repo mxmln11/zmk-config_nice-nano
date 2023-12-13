@@ -11,9 +11,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-&led_strip {
-    chain-length = <27>;
-};
+//&led_strip {
+//    chain-length = <27>;
+//};
 
 / {   
         keymap {
