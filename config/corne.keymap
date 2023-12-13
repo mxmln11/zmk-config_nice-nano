@@ -10,7 +10,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ {
+/ {     ed_strip {
+        chain-length = <21>;
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
