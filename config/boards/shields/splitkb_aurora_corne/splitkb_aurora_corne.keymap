@@ -1,5 +1,5 @@
 //#include <../boards/shields/splitkb_aurora_corne/boards/nice_nano_v2.overlay>
-//#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/rgb.h>
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
