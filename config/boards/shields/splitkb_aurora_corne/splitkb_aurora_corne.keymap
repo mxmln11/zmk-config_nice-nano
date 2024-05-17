@@ -49,7 +49,7 @@
             bindings = <
                &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-               &kp LSHFT  &trans       &trans       &trans       &trans       &ext_power EP_TOG &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+               &kp LSHFT  &rgb_ug RGB_TOG       &rgb_ug RGB_EFF &trans       &trans       &ext_power EP_TOG &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                             	                   &kp LGUI      &trans       &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
