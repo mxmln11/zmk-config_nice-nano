@@ -1,6 +1,6 @@
 
 # ZMK-config for splitkb Aurora Corne 
-with  nice!nano v2 and nice!view shield;
+with  nice!nano v2 and nice!view;
 
 ## Branches
 - main_no_rgb
