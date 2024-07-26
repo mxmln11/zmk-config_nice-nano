@@ -1,5 +1,5 @@
 # ZMK-config for splitkb Aurora Corne
 
-with nice!nano v2 and nice!view shield;
+with nice!nano v2 and oled display;
 
-##  main_with_rgb_no_backlight
+##  main_with_rgb+bl+oled
