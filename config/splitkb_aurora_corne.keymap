@@ -15,10 +15,6 @@
     chain-length = <27>;
 };
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
-
 /{conditional_layers {
     compatible = "zmk,conditional-layers";
     tri_layer {
