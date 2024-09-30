@@ -14,10 +14,10 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: splitkb_aurora_corne_left nice_view_adapter nice_view
-    artifact-name: corne_left_remapped_pins_no_rgb
+    shield: corne_left nice_view_adapter nice_view
+    artifact-name: light_corne_left_remapped_pins_no_rgb
   - board: nice_nano_v2
-    shield: splitkb_aurora_corne_right nice_view_adapter nice_view
-    artifact-name: corne_right_remapped_pins_no_rgb
+    shield: corne_right nice_view_adapter nice_view
+    artifact-name: light_corne_right_remapped_pins_no_rgb
   - board: nice_nano_v2
     shield: settings_reset
