@@ -18,7 +18,7 @@ cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 
 /{keymap{
     compatible = "zmk,keymap";
-        default_layer{
+        default_layer{display-name = "Base";
         // -----------------------------------------------------------------------------------------
         //     |  TAB |  Q  |  W  |  E  |  R  |  T  |            |  Y  |  U   |  I      |  O   |  P      | BKSP |
         //     | CTRL |  A  |  S  |  D  |  F  |  G  |            |  H  |  J   |  K      |  L   |  ;      |  '   |
@@ -31,7 +31,7 @@ cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
                                       &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
         };
-        lower_layer {
+        lower_layer {display-name = "Lower";
         // -----------------------------------------------------------------------------------------
         //     |  TAB     |  1      |  2      |  3      |  4      |  5          |       |  6      |  7      |  8      |  9      |  0      | DEL  |
         //     | CTRL     | C_PREV  | C_PP    | C_PP    | C_NEXT  | C_VOL_UP    |       | LFT     | DWN     |  UP     | RGT     |  PG_UP  |      |
@@ -45,7 +45,7 @@ cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
             >;
         };
         
-        raise_layer {
+        raise_layer {display-name = "Upper";
         // -----------------------------------------------------------------------------------------
         //     |  TAB     |  !          |  @      |  #          |  $          |  %      |      |  ^      |  &      |  *          |  (      |  )      | BKSP |
         //     | BTCLR    | BT1         | BT2     | BT3         | BT4         | BT5     |      |         |  -      |  =          |  [      |  ]      |  \  |  `   |
