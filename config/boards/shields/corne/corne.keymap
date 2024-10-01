@@ -11,7 +11,10 @@
 
 &nice_view_spi {
    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
 
+&soft_off {
+    hold-time-ms = <5000>; // Only turn off it the key is held for 5 seconds or longer.
 };
 
 /{keymap{
@@ -38,10 +41,10 @@
             bindings = <
                &kp TAB   &kp N1      &kp N2   &kp N3   &kp N4     &kp N5                &kp N6   &kp N7   &kp N8     &kp N9    &kp N0     &kp DEL
                &kp LCTRL &kp C_PREV  &kp C_PP &kp C_PP &kp C_NEXT &kp C_VOL_UP          &kp LEFT &kp DOWN &kp UP     &kp RIGHT &kp PG_UP  &trans
-               &kp LSHFT &trans      &trans   &trans   &kp INS    &kp C_VOL_DN          &trans   &kp END  &kp HOME   &trans    &kp PG_DN  &trans
+               &kp LSHFT &soft_off     &trans   &soft_off   &kp INS    &kp C_VOL_DN          &trans   &kp END  &kp HOME   &trans    &kp PG_DN  &soft_off
                                   	          &kp LGUI &trans     &kp SPACE             &kp RET  &trans   &kp RALT
             >;
-        };
+        };c
         
         raise_layer {
         // -----------------------------------------------------------------------------------------
