@@ -83,7 +83,7 @@
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-lower_layer {display-name = "Numpad";
+numpad_layer {display-name = "Numpad";
 // -----------------------------------------------------------------------------------------
 // |      |      |      |      |      |      |      |      /       |   7    |    8    |    9    |    -    | DEL |
 // |      |      |      |      |      |      |      |      *       |   4    |    5    |    6    |    +    |     |
