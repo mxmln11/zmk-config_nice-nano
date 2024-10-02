@@ -29,7 +29,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                default_layer {display-name = "Base";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -42,7 +42,7 @@
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-                lower_layer {
+                lower_layer {display-name = "Numbers";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // | CTRL | C_PREV | C_PP  | C_PP | C_NEXT | C_VOL_UP  | LFT | DWN |  UP | RGT |  PG_UP   |      |
@@ -56,7 +56,7 @@
                         >;
                 };
 
-                raise_layer {
+                raise_layer {display-name = "Legend";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |  |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -70,7 +70,7 @@
                         >;
                 };
 
-                adjust_layer {
+                adjust_layer {display-name = "RGB";
 // -----------------------------------------------------------------------------------------
 // |  TAB |         |           |        |         |     |   |     |     |     |     |     |      |
 // | RGB_TOG | RGB_HUI | RGB_SAI  | RGB_BRI |  |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
