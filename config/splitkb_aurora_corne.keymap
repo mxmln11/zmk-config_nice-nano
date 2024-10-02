@@ -90,9 +90,9 @@ numpad_layer {display-name = "Numpad";
 // |      |      |      |      |      |      |      |      .       |   1    |    2    |    3    |    =    |     |
 //                      | GUI  | TOG4 | SPC  |      |     ENT      |   ,    |    0    |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans        &kp FSLH        &kp N7   &kp N8    &kp N9    &trans     &kp DEL
-   &trans &trans &trans &trans &trans &trans        &kp KP_MULTIPLY &kp N4   &kp N5    &kp N6    &trans     &trans
-   &trans &trans &trans &trans &trans &trans        &kp DOT         &kp N1   &kp N2    &kp N3    &trans     &trans
+   &trans &trans &trans &trans &trans &trans        &kp FSLH        &kp N7   &kp N8    &kp N9    &kp MINUS &kp DEL
+   &trans &trans &trans &trans &trans &trans        &kp KP_MULTIPLY &kp N4   &kp N5    &kp N6    &kp PLUS  &trans
+   &trans &trans &trans &trans &trans &trans        &kp DOT         &kp N1   &kp N2    &kp N3    &kp EQUAL &trans
                         &kp LGUI &tog 4 &kp SPACE   &kp RET         &kp COMMA  &kp N0
                         >;
                 };
