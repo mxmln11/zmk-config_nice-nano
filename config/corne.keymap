@@ -63,12 +63,12 @@ cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
         };
         numpad_layer {display-name = "Numpad";
         // -----------------------------------------------------------------------------------------
-        // |      |      |      |      |      |      |      |      /       |   7    |    8    |    9    |    -    | DEL |
-        // |      |      |      |      |      |      |      |      *       |   4    |    5    |    6    |    +    |     |
-        // |      |      |      |      |      |      |      |      .       |   1    |    2    |    3    |    =    |     |
+        // |      |      |      |      |      |      |      |      /       |   7    |    8    |    9    |    -    | BKSP |
+        // |      |      |      |      |      |      |      |      *       |   4    |    5    |    6    |    +    |      |
+        // |      |      |      |      |      |      |      |      .       |   1    |    2    |    3    |    =    |      |
         //                      | GUI  | TOG4 | SPC  |      |     ENT      |   ,    |    0    |
                                 bindings = <
-           &trans &trans &trans &trans &trans &trans        &kp FSLH        &kp N7   &kp N8    &kp N9    &kp MINUS &kp DEL
+           &trans &trans &trans &trans &trans &trans        &kp FSLH        &kp N7   &kp N8    &kp N9    &kp MINUS &kp BSPC
            &trans &trans &trans &trans &trans &trans        &kp KP_MULTIPLY &kp N4   &kp N5    &kp N6    &kp PLUS  &trans
            &trans &trans &trans &trans &trans &trans        &kp DOT         &kp N1   &kp N2    &kp N3    &kp EQUAL &trans
                                 &kp LGUI &tog 3 &kp SPACE   &kp RET         &kp COMMA  &kp N0
