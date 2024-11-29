@@ -14,10 +14,10 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
+    shield: corne_left nice_view_adapter nice_view_gem
     artifact-name: light_corne_left_remapped_pins_no_rgb
   - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
+    shield: corne_right nice_view_adapter nice_view_gem
     artifact-name: light_corne_right_remapped_pins_no_rgb
   - board: nice_nano_v2
     shield: settings_reset
