@@ -38,12 +38,12 @@
         // -----------------------------------------------------------------------------------------
         //     |  TAB     |  1      |  2      |  3      |  4      |  5          |       |  6      |  7      |  8      |  9      |  0      | DEL   |
         //     | CTRL     | C_PREV  | C_PP    | C_PP    | C_NEXT  | C_VOL_UP    |       | LFT     | DWN     |  UP     | RGT     |  PG_UP  |       |
-        //     | SHFT     | S_OFF   |         |         |  INS    |   C_VOL_DN  |       | TOG3    |         |         |         |  PG_DN  | S_OFF |
+        //     | SHFT     | S_OFF   |         |         |  INS    |   C_VOL_DN  |       | TOG3    |         |         |         |  PG_DN  |       |
         //                                    | GUI     |         | SPC         |       | ENT     |         | ALT     |
             bindings = <
                &kp TAB   &kp N1      &kp N2   &kp N3   &kp N4     &kp N5                &kp N6   &kp N7   &kp N8     &kp N9    &kp N0     &kp DEL
                &kp LCTRL &kp C_PREV  &kp C_PP &kp C_PP &kp C_NEXT &kp C_VOL_UP          &kp LEFT &kp DOWN &kp UP     &kp RIGHT &kp PG_UP  &trans
-               &kp LSHFT &soft_off   &trans   &trans   &kp INS    &kp C_VOL_DN          &tog 3   &kp END  &kp HOME   &trans    &kp PG_DN  &soft_off
+               &kp LSHFT &soft_off   &trans   &trans   &kp INS    &kp C_VOL_DN          &tog 3   &kp END  &kp HOME   &trans    &kp PG_DN  &trans
                                   	          &kp LGUI &trans     &kp SPACE             &kp RET  &trans   &kp RALT
             >;
         };
