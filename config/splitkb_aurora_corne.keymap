@@ -18,7 +18,7 @@
 
 /{keymap{
     compatible = "zmk,keymap";
-        default_layer{
+        default_layer{display-name = "Base";
         // -----------------------------------------------------------------------------------------
         //     |  TAB |  Q  |  W  |  E  |  R  |  T  |            |  Y  |  U   |  I      |  O   |  P      | BKSP |
         //     | CTRL |  A  |  S  |  D  |  F  |  G  |            |  H  |  J   |  K      |  L   |  ;      |  '   |
@@ -31,32 +31,45 @@
                                       &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
         };
-        lower_layer {
+        lower_layer {display-name = "Numbers";
         // -----------------------------------------------------------------------------------------
-        //     |  TAB     |  1      |  2      |  3      |  4      |  5          |       |  6      |  7      |  8      |  9      |  0      | DEL  |
-        //     | CTRL     | C_PREV  | C_PP    | C_PP    | C_NEXT  | C_VOL_UP    |       | LFT     | DWN     |  UP     | RGT     |  PG_UP  |      |
-        //     | SHFT     |         |         |         |  INS    |   C_VOL_DN  |       |         |         |         |         |  PG_DN  |      |
+        //     |  TAB     |  1      |  2      |  3      |  4      |  5          |       |  6      |  7      |  8      |  9      |  0      |  DEL  |
+        //     | CTRL     | C_PREV  | C_PP    | C_PP    | C_NEXT  | C_VOL_UP    |       | LFT     | DWN     |  UP     | RGT     |  PG_UP  |       |
+        //     | SHFT     | S_OFF   |         |         |  INS    |   C_VOL_DN  |       | TOG4    |         |         |         |  PG_DN  |       |
         //                                    | GUI     |         | SPC         |       | ENT     |         | ALT     |
             bindings = <
-               &kp TAB   &kp N1      &kp N2   &kp N3   &kp N4     &kp N5                &kp N6   &kp N7   &kp N8     &kp N9    &kp N0     &kp DEL
-               &kp LCTRL &kp C_PREV  &kp C_PP &kp C_PP &kp C_NEXT &kp C_VOL_UP          &kp LEFT &kp DOWN &kp UP     &kp RIGHT &kp PG_UP  &trans
-               &kp LSHFT &trans      &trans   &trans   &kp INS    &kp C_VOL_DN          &trans   &kp END  &kp HOME   &trans    &kp PG_DN  &trans
-                                  	          &kp LGUI &trans     &kp SPACE             &kp RET  &trans   &kp RALT
+               &kp TAB   &kp N1      &kp N2   &kp N3   &kp N4     &kp N5                &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp DEL
+               &kp LCTRL &kp C_PREV  &kp C_PP &kp C_PP &kp C_NEXT &kp C_VOL_UP          &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT &kp PG_UP  &trans
+               &kp LSHFT &soft_off       &trans   &trans   &kp INS    &kp C_VOL_DN      &tog 3    &kp END   &kp HOME   &trans    &kp PG_DN  &trans
+                                  	          &kp LGUI &trans     &kp SPACE             &kp RET   &trans    &kp RALT
             >;
         };
         
-        raise_layer {
+        raise_layer {display-name = "Legend";
         // -----------------------------------------------------------------------------------------
-        //     |  TAB     |  !          |  @      |  #          |  $          |  %      |      |  ^      |  &      |  *          |  (      |  )      | BKSP |
-        //     | BTCLR    | BT1         | BT2     | BT3         | BT4         | BT5     |      |         |  -      |  =          |  [      |  ]      |  \  |  `   |
-        //     | SHFT     |             |         |             |             |         |      |  _      |  +      |  {          |  }      | "|"     |  ~   |
-        //                                        | GUI         |             | SPC     |      | ENT     |         | ALT     |
+        //     |  TAB     |  !          |  @      |  #          |  $          |  %      |       |    ^    |    &   |      *        |    (    |    )   | BKSP |
+        //     | BTCLR    | BT1         | BT2     | BT3         | BT4         | BT5     |       |    -         =   |      [        |    ]    |  \     |  `   |
+        //     | CAPS_WORD|             |         |             |             |         |       |    _    |    +   |      {        |    }    |   "|"  |  ~   |
+        //                                        | GUI         |             | SPC     |       |   ENT   |         |    ALT       |
             bindings = <
-               &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-               &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-               &kp LSHFT  &trans       &trans       &trans       &trans       &ext_power EP_TOG &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                            	                   &kp LGUI      &trans       &kp SPACE       &kp RET   &trans    &kp RALT
+               &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+               &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+               &caps_word &trans       &trans       &trans       &trans       &ext_power EP_TOG &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                            	                   &kp LGUI      &trans       &kp SPACE         &kp RET   &trans    &kp RALT
             >;
+        };
+        numpad_layer {display-name = "Numpad";
+        // -----------------------------------------------------------------------------------------
+        // |     |     |     |     |     |     |     |    +    |   7    |    8    |    9    |    :    | BKSP |
+        // |     |     |     |     |     |     |     |    -    |   4    |    5    |    6    |    *    |      |
+        // |     |     |     |     |     |     |     |    =    |   1    |    2    |    3    |    /    |  .   |
+        //                   | GUI | TOG4| SPC |     |   ENT   |   ,    |    0    |
+                                bindings = <
+            &trans &none &none &none &none &none      &kp PLUS  &kp N7   &kp N8    &kp N9   &kp COLON &kp BSPC
+            &trans &none &none &none &none &none      &kp MINUS &kp N4   &kp N5    &kp N6   &kp KP_MULTIPLY &none
+            &trans &none &none &none &none &none      &kp EQUAL &kp N1   &kp N2    &kp N3   &kp FSLH  &kp DOT
+                             &kp LGUI &tog 3 &kp SPACE &kp RET  &kp COMMA &kp N0
+                >;
         };
     };
 };
