@@ -11,15 +11,15 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
+#nice_view_adapter nice_view
+#nice_view_adapter nice_view
 ---
 include:
   - board: nice_nano_v2
-    shield: splitkb_aurora_corne_left 
-    #nice_view_adapter nice_view
+    shield: splitkb_aurora_corne_left
     artifact-name: corne_left_with_rgb
   - board: nice_nano_v2
     shield: splitkb_aurora_corne_right 
-    #nice_view_adapter nice_view
     artifact-name: corne_right_with_rgb
   - board: nice_nano_v2
     shield: settings_reset
